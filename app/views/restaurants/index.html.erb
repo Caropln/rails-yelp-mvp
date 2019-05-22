@@ -9,8 +9,10 @@
           <p><%= restaurant.address %></p>
         </div>
 
-        <%= link_to "", restaurant_path(restaurant), class: "card-link" %>
+        <%= link_to "details", restaurant_path(restaurant), class: "card-link" %>
       </div>
     </div>
+       <%= link_to "new", new_restaurant_path(restaurant) %>
     <% end %>
-  </div>
+
+</div>
